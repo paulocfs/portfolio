@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lalezar&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lalezar&family=Saira:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Saira', sans-serif;
+  background-color: #1a1a1a;
+}
+ul{
+  list-style: none;
+}
+
+a{
+  display: block;
+  text-decoration: none;
+}
+
+span,p{
+  display: block;
+}
+
+h1{
+  font-size: 32px;
+}
+
+h2{
+  font-size: 26px;
+}
+
+p{
+  font-size: 14px;
+}
+.container{
+  width: 80%;
+  margin: 0 auto;
+}
+
+
+/*MARGINS*/
+
+.mt-50{
+  margin-top: 50px;
+}
+
+.mt-40{
+  margin-top: 40px;
+}
+.mt-30{
+  margin-top: 30px;
+}
+.mt-20{
+  margin-top: 20px;
+}
+
+.mt-10{
+  margin-top: 10px;
+}
+
+.ml-10{
+  margin-left: 10px;
+}
+
+
+/*COLORS*/
+
+.bg-black{
+  background-color: #1a1a1a;
+}
+
+
+
+.cg-white{
+  color: #fff;
+}
+
+.cg-purple{
+  color: #787CB4;
+}
+
+/*text/fonts*/
+
+.upper{
+  text-transform: uppercase;
+}
+
+.text-center{
+  text-align: center;
+}
+/*POSITIONS*/
+
+.wrap{
+  flex-wrap: wrap;
+}
+
+.d-flex{
+  display: flex;
+  
+}
+
+.jc-center{
+  justify-content: center;
+}
+
+.jc-around{
+  justify-content: space-around;
+}
+
+.jc-between{
+  justify-content: space-between;
+}
+.ai-center{
+  align-items: center;
+}
+
+.center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.d-column{
+  display: flex;
+  flex-direction: column;
+ 
+}
+
+.d-column-center{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/*BTNS*/
+
+.btn{
+  padding: 10px;
+  border: 1px solid #f74b05;
+  /*border: 2px solid;
+  border-image: linear-gradient( 90deg, #1a1a1a, #F74B05 100%) 1;*/
+  text-align: center;
+  text-transform: uppercase;
+  margin: 10px 0;
+  color: #F74B05;
+  width: 200px;
+  border-radius: 3px;
+}
+
+.btn::after{
+  content: '\2794';
+  margin-left: 5px;
+
+}
+.btn:hover{
+  background-color: #F74B05;
+  color: #fff;
+  transition: .7s;
+}
+/*ICONS*/
+
+
+/*TITLES*/
+
+.box-title::before,.box-title::after {
+  content: '';
+  height: 170px;
+  width: 0px;
+  border: 1px dashed #787CB4;
+  display: block;
+ margin: auto;
+ 
+}
+
+.title{
+  text-transform: uppercase;
+  position: relative;
+  color: #333333;
+  font-family: 'Lalezar', cursive;
+  font-size: 80px;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.title::before{
+  content: '';
+  color: #f74b05;
+  display: block;
+  position: absolute;
+ font-family: 'Lalezar', cursive;
+  font-size: 40px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  letter-spacing: 5px;
+}
+
+#title-services:before{
+  content: 'serviços';
+}
+
+#title-projects:before{
+  content: 'projetos';
+}
+
+#title-about:before{
+  content: 'sobre';
+}
+
+.title-elegance{
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 80px 0;
+  font-size: 30px;
+  position: relative;
+  font-weight: 600;
+  
+}
+
+.title-elegance:after{
+  content: url('../images/dashed-airplane.png');
+  display: block;
+  position: absolute;
+  transform: translate(25px,-25px);
+}
+
+
+
+.title-idea{
+  display: flex;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 80px 0;
+  font-size: 30px;
+  position: relative;
+  font-weight: 600;
+ 
+}
+
+.title-idea:after{
+  content: url('../images/dashed-idea.png');
+  display: block;
+  position: absolute;
+ left: 160px;
+ top: 15px;
+}
+
+
+
+
+
+/*BORDERS*/
